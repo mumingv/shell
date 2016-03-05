@@ -1,4 +1,5 @@
 #!/bin/bash
+# Command: echo
 # Function: 打印信息到终端
 # Author: Jie Yin
 
