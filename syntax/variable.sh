@@ -3,9 +3,10 @@
 # Author: Jie Yin
 
 ## 1. 在Bash中，每个变量的值都存储为字符串，不论在给变量赋值的时候有没有使用引号;
-## 2. 常见的环境变量: HOME, PWD, USER, UID, SHELL, PS1
+## 2. 常见的环境变量: HOME, PWD, USER, UID, SHELL, PS1, LD_LIBRARY_PATH
 ## UID - 用户ID, root的UID为0
 ## PS1 - 命令提示符
+## LD_LIBRARY_PATH - Lib库路径
 
 # 变量赋值方式: VAR=value
 NAME=mumingv
