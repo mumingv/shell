@@ -21,7 +21,7 @@ echo ${NAME}
 echo -e "\e[1;32m变量扩展测试\e[0m"
 echo '$NAME aaa'
 echo "$NAME aaa"
-echo $NAME aaa
+echo $NAME aaa  #不带引号时，变量也会被扩展
 
 # 获取变量(字符串)的长度
 echo -e "\e[1;32m变量长度\e[0m"
