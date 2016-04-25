@@ -1,11 +1,11 @@
 #/***********************************************************
-#      FileName: check_server.sh
+#      FileName: check_nginx_status.sh
 #          Desc: 检查nginx服务器的状态
 #        Author: Jie Yin
 #         Email: mumingv@163.com
 #      HomePage: https://github.com/mumingv
 #       Version: 0.0.1
-#    LastChange: 2016-04-25 19:29:43
+#    LastChange: 2016-04-25 19:55:02
 #       History:
 # ***********************************************************/
 #/bin/bash
