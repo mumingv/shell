@@ -1,5 +1,5 @@
 #!/bin/bash
-#Filename: printf.sh
+# printf函数
 
 #No   Name      Score
 #1    Zhao      66.67
