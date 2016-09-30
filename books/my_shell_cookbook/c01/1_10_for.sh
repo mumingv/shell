@@ -23,11 +23,19 @@ done
 
 # 遍历数组元素
 arr=("apple" "banana" "orange")
-for fruit in ${arr[@]}; do
+for fruit in ${arr[*]}; do
     echo "fruit --> $fruit"
 done
 
 
 
-
 # 如何遍历字符串中的字符
+
+
+##################  C语言格式  #################
+
+# 遍历数组元素
+arr=("apple" "banana" "orange")
+for ((i=0; i<${#arr[*]}; i++)) {
+    echo "C: fruit --> ${arr[$i]}"
+}
