@@ -1,5 +1,5 @@
 #/bin/sh
-# 
+# 将每个字段改写成 key-value 对形式，并用分号进行分隔
 
 head text_class_article_vectors.txt | awk '
 # 这段代码只执行一次，初始化循环变量
@@ -19,6 +19,6 @@ BEGIN {
     for (b = 1; b < NF; b++) {
         printf b ":" $(b+1) " ";
     }
-    print "";  # 换行, 直接写 print 就可以了
+    print "";  # 换行
     a++;
 }'
