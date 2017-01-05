@@ -12,5 +12,5 @@
 
 # Usage: sh rename.sh {rmhead | ...} <string>
 
-sudo cp -r ./m-*.sh /usr/local/bin/
+sudo cp -r ./m-* /usr/local/bin/
 
