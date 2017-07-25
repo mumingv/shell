@@ -21,6 +21,8 @@ fi
 
 filename=$1
 
+hostname=`hostname`
 dirpath=`pwd`
 echo $dirpath'/'$filename
+echo 'ftp://'$hostname$dirpath'/'$filename
 
