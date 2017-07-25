@@ -1,0 +1,26 @@
+#!/bin/sh
+#/***********************************************************
+#      FileName: m-pwd
+#          Desc: 生成文件完整路径
+#        Author: Jie Yin
+#         Email: mumingv@163.com
+#      HomePage: https://github.com/mumingv
+#       Version: 0.0.1
+#    LastChange: 2017-07-05 19:27:20
+#       History:
+# ***********************************************************/
+
+# Usage: m-pwd <filename>
+# 说明：<filename>为当前目录下的文件名称
+# 输出示例：/Users/muming/git/shell/bin
+
+if [ $# -ne 1 ]; then
+    echo "Usage: sh m-pwd <filename>"
+    exit
+fi
+
+filename=$1
+
+dirpath=`pwd`
+echo $dirpath'/'$filename
+
