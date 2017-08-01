@@ -14,15 +14,20 @@
 # 说明：<filename>为当前目录下的文件名称
 # 输出示例：/Users/muming/git/shell/bin
 
-if [ $# -ne 1 ]; then
-    echo "Usage: sh m-pwd <filename>"
+if [ $# -ne 0 -a $# -ne 1 ]; then
+    echo "Usage: sh m-pwd [filename]>"
     exit
 fi
 
-filename=$1
+if [ $# -eq 0 ]; then
+    filename=''
+else
+    filename=$1
+fi
 
 hostname=`hostname`
 dirpath=`pwd`
 echo $dirpath'/'$filename
 echo 'ftp://'$hostname$dirpath'/'$filename
+echo 'http://'$hostname:8016'/'
 
