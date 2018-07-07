@@ -35,4 +35,13 @@ echo ${array[0]: -7:0}  # null
 echo ${array[0]: -7:2}  # bc
 echo ${array[0]: -7:-2}  # -2: substring expression < 0
 
+# 数组变量
+array=(0 1 2 3 4 5 6 7 8 9 0 a b c d e f g h)
+echo ${array[@]:7}  # 7 8 9 0 a b c d e f g h
+echo ${array[@]:7:2}  # 7 8
+echo ${array[@]: -7:0}  # null
+echo ${array[@]: -7:2}  # b c
+echo ${array[@]: -7:-2}  # -2: substring expression < 0
+echo ${array[@]:0}  # 0 1 2 3 4 5 6 7 8 9 0 a b c d e f g h
+echo ${array[@]:0:2}  # 0 1
 
